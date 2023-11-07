@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Update apt cache.
+sudo apt-get update
+
+# Install Nginx.
+sudo apt-get install -y nginx
+
+# Set the home page.
+echo "<html><body><h2>Hello and welcome to my web page! \
+--My name is Michael and I'm currently taking CS135 at CBC. I'm also working in corporate IT as well. Before going back to school for computer science I  Virtual Machine made in Azure! My name is probably $(hostname).</h2></body></html>" | sudo tee -a /var/www/html/index.html
